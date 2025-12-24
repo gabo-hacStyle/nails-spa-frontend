@@ -15,6 +15,7 @@ const Dashboard = () => {
   const [error, setError] = useState<string | null>(null);
  
   const role = Cookies.get("role");
+  console.log("Un log para saber si se están guardando las cookies en dashboard:", role);
   const employeeId = Cookies.get("userId") || "";
   const [filters, setFilters] = useState<Filters>({ date: undefined, page: 1, limit: 10 });
 
