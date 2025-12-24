@@ -1,7 +1,9 @@
 import axios from 'axios'
 
+const BASE_URL = process.env.BACKEND_BASE_URL || 'http://localhost:3000/api/v1';
+
 const instance = axios.create({
-    baseURL: 'http://localhost:3000/api/v1',
+    baseURL: BASE_URL,
     withCredentials: true 
 })
 //Console de las credenciales:
