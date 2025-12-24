@@ -48,11 +48,11 @@ function Navbar() {
           {isAuthenticated ? (
             <>
               <a href="/mis-citas" className="text-gray-700 hover:text-pink-600 font-medium px-3 py-2 rounded-lg transition-colors">Mis citas</a>
-              {
+              {/* {
                 role !== "customer" && (
                  <a href="/dashboard" className="text-gray-700 hover:text-pink-600 font-medium px-3 py-2 rounded-lg transition-colors">Dashboard</a>
                 )
-              }
+              } */}
               <button
                 onClick={handleLogout}
                 className="text-gray-700 hover:text-pink-600 font-medium px-3 py-2 rounded-lg transition-colors"
